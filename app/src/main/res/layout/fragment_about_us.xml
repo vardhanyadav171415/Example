@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.AboutUsFragment">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:layout_marginTop="60dp">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/about_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="144dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="17dp"
+                android:text="About Us"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/about_text"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/about_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:text="Lorem ipsum dolor sit amet. Cum molestias voluptatem qui veritatis explicabo et praesentium sint. Et itaque quae et accusantium omnis quo dolores iste eos facilis nemo. Et deleniti voluptas non omnis ipsum aut voluptate eius qui rerum accusamus sit dicta rerum ad amet odit maiores quas cum consectetur inventore qui quisquam perferendis quo veniam voluptatem ut laboriosam laboriosam. Est dignissimos aliquam qui minima ullam a ullam ipsa aut Quis autem et odio odit non architecto dolor qui molestiae accusantium?Sed asperiores doloribus 33 voluptates iste ut impedit quae. Ab aliquid sequi rem unde amet cum necessitatibus tenetur ea nesciunt molestias aut cumque aspernatur a perferendis doloremque est placeat enim? Ut autem corporis eum autem blanditiis ut voluptates porro.Sed perspiciatis distinctio quo quam tenetur et sequi odio qui veritatis voluptatem! Et enim itaque non officiis"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/about_label" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+    <include
+        layout="@layout/toolbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+</FrameLayout>

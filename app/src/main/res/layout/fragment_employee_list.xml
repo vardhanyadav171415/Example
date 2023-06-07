@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.EmployeeListFragment">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/employee_recylcerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp"
+        tools:listitem="@layout/list_item" />
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#00BCD4"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <include layout="@layout/list_toolbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/no_employee_record"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|center"
+        android:gravity="center"
+        android:text="No Db is present"
+        android:textSize="14sp"
+        tools:text="No db present" />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addemployee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:clickable="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="25dp"
+        android:src="@drawable/baseline_add_circle_outline_24" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
